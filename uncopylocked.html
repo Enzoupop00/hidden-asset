@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Asset - Uncopylocked</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" onclick="event.preventDefault(); navigateWithTransition('index.html')" class="logo">
+                <span style="color:#00ff9d;">H</span>IDDEN ASSET
+            </a>
+            <div class="nav-links">
+                <a href="#" onclick="event.preventDefault(); navigateWithTransition('index.html')">Accueil</a>
+                <a href="#" onclick="event.preventDefault(); navigateWithTransition('uncopylocked.html')">Uncopylocked</a>
+                <a href="#" onclick="event.preventDefault(); navigateWithTransition('models.html')">Models</a>
+                <a href="#" onclick="event.preventDefault(); navigateWithTransition('assets.html')">Assets</a>
+                <a href="#" onclick="event.preventDefault(); navigateWithTransition('maps.html')">Maps</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page pt-28">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <h1 class="text-6xl font-bold tracking-tighter mb-10">UNCOPYLOCKED</h1>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Carte 1 -->
+                <div class="card">
+                    <img src="https://picsum.photos/id/1015/600/340" class="w-full rounded-t-3xl">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold">Tycoon Kit Complet</h3>
+                        <p class="text-emerald-400 mt-1 mb-4">Uncopylocked • Gratuit</p>
+                        
+                        <!-- Bouton Télécharger -->
+                        <button onclick="downloadFile('Tycoon_Kit_Complet.rbxl', 'https://example.com/files/tycoon-kit.rbxl')" 
+                                class="w-full bg-white text-black font-semibold py-3 rounded-2xl hover:bg-emerald-400 hover:text-black transition-all">
+                            📥 Télécharger
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="card">
+                    <img src="https://picsum.photos/id/201/600/340" class="w-full rounded-t-3xl">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold">Obby Advanced</h3>
+                        <p class="text-emerald-400 mt-1 mb-4">Uncopylocked • Gratuit</p>
+                        
+                        <button onclick="downloadFile('Obby_Advanced.rbxl', 'https://example.com/files/obby-advanced.rbxl')" 
+                                class="w-full bg-white text-black font-semibold py-3 rounded-2xl hover:bg-emerald-400 hover:text-black transition-all">
+                            📥 Télécharger
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Carte 3 -->
+                <div class="card">
+                    <img src="https://picsum.photos/id/870/600/340" class="w-full rounded-t-3xl">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold">Simulator Base</h3>
+                        <p class="text-emerald-400 mt-1 mb-4">Uncopylocked • Gratuit</p>
+                        
+                        <button onclick="downloadFile('Simulator_Base.rbxl', 'https://example.com/files/simulator-base.rbxl')" 
+                                class="w-full bg-white text-black font-semibold py-3 rounded-2xl hover:bg-emerald-400 hover:text-black transition-all">
+                            📥 Télécharger
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Exemple carte 4 -->
+                <div class="card">
+                    <img src="https://picsum.photos/id/300/600/340" class="w-full rounded-t-3xl">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold">Nom de ton asset</h3>
+                        <p class="text-emerald-400 mt-1 mb-4">Uncopylocked • Gratuit</p>
+                        <button onclick="downloadFile('Nom_Fichier.rbxl', 'https://ton-lien-direct.com/fichier.rbxl')" 
+                                class="w-full bg-white text-black font-semibold py-3 rounded-2xl hover:bg-emerald-400 hover:text-black transition-all">
+                            📥 Télécharger
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://picsum.photos/id/300/600/340" class="w-full rounded-t-3xl">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold">Nom de ton asset</h3>
+                        <p class="text-emerald-400 mt-1 mb-4">Uncopylocked • Gratuit</p>
+                        <button onclick="downloadFile('Nom_Fichier.rbxl', 'https://ton-lien-direct.com/fichier.rbxl')" 
+                                class="w-full bg-white text-black font-semibold py-3 rounded-2xl hover:bg-emerald-400 hover:text-black transition-all">
+                            📥 Télécharger
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://picsum.photos/id/300/600/340" class="w-full rounded-t-3xl">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold">Nom de ton asset</h3>
+                        <p class="text-emerald-400 mt-1 mb-4">Uncopylocked • Gratuit</p>
+                        <button onclick="downloadFile('Nom_Fichier.rbxl', 'https://ton-lien-direct.com/fichier.rbxl')" 
+                                class="w-full bg-white text-black font-semibold py-3 rounded-2xl hover:bg-emerald-400 hover:text-black transition-all">
+                            📥 Télécharger
+                        </button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer avec logos -->
+    <footer class="border-t border-white/10 py-12 bg-black mt-20">
+        <div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+            <p class="text-zinc-500">© 2026 Hidden Asset • Tous droits réservés</p>
+            <div class="flex gap-12">
+                <a href="https://discord.gg/hiddenasset" target="_blank" class="footer-logo text-[#5865F2]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.59 5.89a16.68 16.68 0 0 0-4.18-1.3 12.3 12.3 0 0 0-.54 2.2 15.3 15.3 0 0 0-4.65 0 12.3 12.3 0 0 0-.54-2.2 16.7 16.7 0 0 0-4.18 1.3 16.9 16.9 0 0 0-2.7 11.6 17.5 17.5 0 0 0 3.3 2.6 13.3 13.3 0 0 0 3.6-1.8c.3-.2.6-.4.8-.7a11.7 11.7 0 0 0-2-1 9.2 9.2 0 0 1 .7-1.2 16.7 16.7 0 0 1 7.4 0c.3.4.5.8.7 1.2a11.7 11.7 0 0 1-2 1 13.3 13.3 0 0 0 3.6 1.8 17.5 17.5 0 0 0 3.3-2.6 16.9 16.9 0 0 0-2.7-11.6z"/>
+                    </svg>
+                </a>
+                <a href="https://youtube.com/@hiddenasset" target="_blank" class="footer-logo text-[#FF0000]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M21.593 7.2a2.506 2.506 0 0 0-1.762-1.762C18.2 4.8 12 4.8 12 4.8s-6.2 0-7.831.638A2.506 2.506 0 0 0 2.407 7.2 26.3 26.3 0 0 0 2 12c0 4.8.2 7.2.638 8.8A2.506 2.506 0 0 0 4.17 22.562C5.8 23.2 12 23.2 12 23.2s6.2 0 7.831-.638a2.506 2.506 0 0 0 1.762-1.762C22 19.2 22 16.8 22 12c0-4.8-.2-7.2-.407-8.8z"/>
+                        <path fill="#fff" d="M10 15.5l5.5-3.5L10 8.5z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-zinc-500 text-sm">Made by enzoupop71 pour la communauté HIDDEN ASSET</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Script pour le téléchargement -->
+    <script>
+        function downloadFile(filename, fileUrl) {
+            const link = document.createElement('a');
+            link.href = fileUrl;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Message de confirmation (optionnel)
+            alert(`Téléchargement de ${filename} commencé !`);
+        }
+    </script>
+</body>
+</html>
